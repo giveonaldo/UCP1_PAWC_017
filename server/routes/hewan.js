@@ -15,7 +15,7 @@ router.get("/", (req, res) => {
   });
 });
 
-// Route post rusakkk
+// POST method hewan
 router.post("/", (req, res) => {
   const {nama, jumlah, jenis} = req.body;
 

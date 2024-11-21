@@ -4,7 +4,9 @@ const app = express()
 const port = process.env.PORT || 5000;
 const expressLsyout = require('express-ejs-layouts');
 
-app.use(express.static('public'))
+app.use(express.static('public'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // EJS Views
 app.use(expressLsyout);
