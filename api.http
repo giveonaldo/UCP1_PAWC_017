@@ -1,0 +1,18 @@
+###
+GET http://localhost:3000/hewan
+
+###
+POST http://localhost:3000/hewan
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nama" : "Anjing",
+    "jumlah": "2",
+    "jenis": "Kendaraan"
+}
+
+###
+DELETE http://localhost:3000/tododb/2
+Content-Type: application/json
+Accept: application/json

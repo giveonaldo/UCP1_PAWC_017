@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Hewan</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Jenis</th>
+        <th>Jumlah</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% hewan.forEach(item => { %>
+      <tr>
+        <td><%= item.nama %></td>
+        <td><%= item.jenis %></td>
+        <td><%= item.jumlah %></td>
+      </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</div>
